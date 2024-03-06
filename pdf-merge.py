@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 Author: Yingyu Wang
 Date: 2022-09-08 11:41:17
-LastEditTime: 2024-03-06 10:50:40
+LastEditTime: 2024-03-06 10:58:08
 LastEditors: naivsheng naivsheng@outlook.com
 Description: 合并pdf,提供选项是否需要在单页后加入空白页，默认添加;根据PyPDF2更新代码
 FilePath: \crawer\pdf-merge.py
@@ -25,7 +25,8 @@ elif blank not in pdf_list:
         reader = PdfReader(pdf_file)
         file_merger.append(pdf)  
         merge_name = 'merger to ' + pdf_list[-1]
-        file_merger.write(merge_name)
+    file_merger.write(merge_name)
+    print(f'already for the pdf with name {merge_name},without blanks')
 else:
     pdf_list.remove(blank)
     check = input('mit blank oder ohne blank(m/o):')
@@ -34,6 +35,9 @@ else:
             pdf_file = open(pdf,'rb')
             reader = PdfReader(pdf_file)
             file_merger.append(pdf)
+        merge_name = 'merger to ' + pdf_list[-1]
+        file_merger.write(merge_name)
+        print(f'already for the pdf with name {merge_name}, without blanks')            
     else:
         for pdf in pdf_list:
             pdf_file = open(pdf,'rb')
@@ -44,3 +48,4 @@ else:
                 file_merger.append(blank)
         merge_name = 'merger to ' + pdf_list[-1]
         file_merger.write(merge_name)
+        print(f'already for the pdf with name {merge_name}, with blanks')    
