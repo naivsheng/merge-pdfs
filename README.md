@@ -2,7 +2,7 @@
  * @Author: naivsheng naivsheng@outlook.com
  * @Date: 2024-01-10 14:21:04
  * @LastEditors: naivsheng naivsheng@outlook.com
- * @LastEditTime: 2024-10-09 12:18:47
+ * @LastEditTime: 2024-10-09 13:47:43
  * @FilePath: \merge-pdfs\README.md
 -->
 # merge-pdfs pdf合并
@@ -26,7 +26,7 @@ merge pdfs and add blank page to single files
 
 用于记录各货柜的文件夹中是否有各店(files.txt)的点货单
 
-调整表格列宽，为表格增加目录
+调整表格列宽，为表格增加目录, 每次运行更新目录页及内页内容
 
 # pdf-split 拆分pdf
 将pdf的各页以Readme.txt文件的页标进行拆分并命名
