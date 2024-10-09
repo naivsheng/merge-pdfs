@@ -48,3 +48,4 @@ Wiesbaden
 Würzburg
 Saabrücken
 FFM_Zeil
+RegensburgSuttgart

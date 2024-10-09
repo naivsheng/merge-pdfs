@@ -1,3 +1,10 @@
+<!--
+ * @Author: naivsheng naivsheng@outlook.com
+ * @Date: 2024-01-10 14:21:04
+ * @LastEditors: naivsheng naivsheng@outlook.com
+ * @LastEditTime: 2024-10-09 10:24:22
+ * @FilePath: \merge-pdfs\README.md
+-->
 # merge-pdfs pdf合并
 merge pdfs and add blank page to single files
 
@@ -8,3 +15,11 @@ merge pdfs and add blank page to single files
 
 20240110更新：
 提供选项是否需要在单页后加入空白页，默认添加
+
+# file_Velten get当前文件夹内全部文件夹及文件以归档:
+## 2024-10-09
+获取文件夹名并创建对应的sheet页, 将文件夹中的pdf文件汇总到表格中
+用于记录各货柜的文件夹中是否有各店(files.txt)的点货单
+
+# pdf-split 拆分pdf
+将pdf的各页以Readme.txt文件的页标进行拆分并命名
