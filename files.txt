@@ -2,7 +2,7 @@ Augsburg
 BerlinAlexanderplatz
 BerlinHauptstr.
 BerlinKantstraße
-BerlinKudamm
+BerlinKuDamm
 BerlinTeltowerDamm
 BerlinTempelhof
 BerlinTurmstr

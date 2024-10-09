@@ -1,7 +1,7 @@
 '''
 # -*- coding: UTF-8 -*-
 Author: Yingyu Wang
-LastEditTime: 2024-10-09 13:37:32
+LastEditTime: 2024-10-09 13:58:03
 LastEditors: naivsheng naivsheng@outlook.com
 Description: get当前文件夹内全部文件名以归档: 获取文件夹名并创建对应的sheet页, 将文件夹中的pdf文件汇总到表格中, 调整列宽
 FilePath: \crawer\file_Velten.py
@@ -39,6 +39,8 @@ for folder in folder_list:
             filiale = file.split('-')[0]
             if filiale == 'Stuttgart':
                 filiale = 'Stuttgart-2'
+            if 'Turmstr' in filiale:
+                filiale = 'BerlinTurmstr'
             elif filiale not in pdf_list:
                 pdf_list[filiale] = []
             pdf_list[filiale].append(file) 
