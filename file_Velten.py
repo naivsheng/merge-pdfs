@@ -1,7 +1,7 @@
 '''
 # -*- coding: UTF-8 -*-
 Author: Yingyu Wang
-LastEditTime: 2024-10-09 13:58:03
+LastEditTime: 2024-10-09 14:26:24
 LastEditors: naivsheng naivsheng@outlook.com
 Description: get当前文件夹内全部文件名以归档: 获取文件夹名并创建对应的sheet页, 将文件夹中的pdf文件汇总到表格中, 调整列宽
 FilePath: \crawer\file_Velten.py
@@ -11,6 +11,9 @@ def read_file():
         FLs = f.readlines()
     return FLs
 def write_file(filiale):
+    elements_with_char = [s for s in filiale if '.pdf' in s]
+    for elem in elements_with_char:
+        filiale.pop(filiale.index(elem))
     with open('files.txt','w',encoding='utf-8')as f:
         f.writelines(line + "\n" for line in filiale)
 import os
