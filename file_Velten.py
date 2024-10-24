@@ -1,7 +1,7 @@
 '''
 # -*- coding: UTF-8 -*-
 Author: Yingyu Wang
-LastEditTime: 2024-10-15 15:19:46
+LastEditTime: 2024-10-15 15:28:42
 LastEditors: naivsheng naivsheng@outlook.com
 Description: get当前文件夹内全部文件名以归档: 获取文件夹名并创建对应的sheet页, 将文件夹中的pdf文件汇总到表格中, 调整列宽
 FilePath: \crawer\file_Velten.py
@@ -64,7 +64,7 @@ for folder in folder_list:
     ws.column_dimensions['A'].width = 25
     ws.column_dimensions['B'].width = 50
     record[folder] = menge
-    print(record)
+    # print(record)
     write_file(list(pdf_list.keys()))
 sheets = wb.sheetnames
 if '目录' in sheets:

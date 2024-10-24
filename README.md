@@ -2,7 +2,7 @@
  * @Author: naivsheng naivsheng@outlook.com
  * @Date: 2024-01-10 14:21:04
  * @LastEditors: naivsheng naivsheng@outlook.com
- * @LastEditTime: 2024-10-09 13:47:43
+ * @LastEditTime: 2024-10-15 15:23:58
  * @FilePath: \merge-pdfs\README.md
 -->
 # merge-pdfs pdf合并
@@ -21,6 +21,11 @@ merge pdfs and add blank page to single files
 提供选项是否需要在单页后加入空白页，默认添加
 
 # file_Velten get当前文件夹内全部文件夹及文件以归档:
+## 2024-10-15
+每次運行記錄log到test.txt文件
+
+在目錄頁增加記錄：缺幾家店
+
 ## 2024-10-09
 获取文件夹名并创建对应的sheet页, 将文件夹中的pdf文件汇总到表格中
 
